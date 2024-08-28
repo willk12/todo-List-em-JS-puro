@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(34, 34, 34, 0.8), #22c);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #fdfdfd;
+  color: #102f5e;
+  border: 2px solid #102f5e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  padding: 10px;
+}
+button:hover {
+  background-color: #102f5e;
+  color: #fff;
+}
+button:hover i {
+  color: #fff;
+}
+button i {
+  pointer-events: none;
+}
+
+input,
+select {
+  padding: 5px;
+}
+
+.todo-container {
+  width: 80%;
+  margin: 3rem auto;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  padding: 10px;
+}
+.todo-container header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.todo-container #todo-form,
+.todo-container #edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.todo-container #todo-form p,
+.todo-container #edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.todo-container #todo-form #cancel-edit-btn,
+.todo-container #edit-form #cancel-edit-btn {
+  margin-top: 1rem;
+}
+.todo-container .form-control {
+  display: flex;
+}
+.todo-container .form-control input {
+  margin-right: 0.3rem;
+}
