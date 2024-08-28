@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   padding: 0;
   margin: 0;
@@ -170,3 +171,92 @@ select {
 
 }
 
+=======
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(34, 34, 34, 0.8), #22c);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #fdfdfd;
+  color: #102f5e;
+  border: 2px solid #102f5e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  padding: 10px;
+
+  &:hover {
+    background-color: #102f5e;
+    color: #fff;
+  }
+
+  &:hover i {
+    color: #fff;
+  }
+
+  i {
+    pointer-events: none;
+  }
+}
+
+input,
+select {
+  padding: 5px;
+}
+
+.hide {
+  // display: none;
+}
+
+.todo-container {
+  width: 80%;
+  margin: 3rem auto;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  padding: 10px;
+
+  header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #todo-form,
+  #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+
+    p {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    #cancel-edit-btn {
+      margin-top: 1rem;
+    }
+  }
+
+  .form-control {
+    display: flex;
+
+    input {
+      margin-right: 0.3rem;
+    }
+  }
+}
+>>>>>>> 5d84f5510bf472738979388571d7d7d611fc5ba5

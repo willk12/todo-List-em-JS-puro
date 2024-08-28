@@ -43,6 +43,10 @@ select {
 }
 
 .todo-container {
+<<<<<<< HEAD
+=======
+  width: 80%;
+>>>>>>> 5d84f5510bf472738979388571d7d7d611fc5ba5
   margin: 3rem auto;
   background-color: #fdfdfd;
   border-radius: 10px;
@@ -72,6 +76,7 @@ select {
 }
 .todo-container .form-control input {
   margin-right: 0.3rem;
+<<<<<<< HEAD
 }
 .todo-container #toolbar {
   padding: 1rem;
@@ -132,4 +137,6 @@ select {
   color: #fff;
   text-decoration: line-through;
   font-style: italic;
+=======
+>>>>>>> 5d84f5510bf472738979388571d7d7d611fc5ba5
 }
