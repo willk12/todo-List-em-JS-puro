@@ -1,14 +1,15 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(0, 0, 0);
   box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(to bottom, rgba(34, 34, 34, 0.8), #22c);
-  background-size: cover;
+  background: hsl(216, 71%, 22%);
+  background: linear-gradient(45deg, hsl(216, 71%, 22%) 0%, hsl(216, 74%, 35%) 0%, hsl(216, 71%, 22%) 63%, hsl(216, 71%, 22%) 100%);
+  background: -webkit-linear-gradient(45deg, hsl(216, 71%, 22%) 0%, hsl(216, 74%, 35%) 0%, hsl(216, 71%, 22%) 63%, hsl(216, 71%, 22%) 100%);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -43,19 +44,20 @@ select {
 }
 
 .todo-container {
-<<<<<<< HEAD
-=======
-  width: 80%;
->>>>>>> 5d84f5510bf472738979388571d7d7d611fc5ba5
   margin: 3rem auto;
   background-color: #fdfdfd;
   border-radius: 10px;
-  padding: 10px;
+  padding: 50px;
+  box-shadow: inset 1px 1px 11px 1px #696868;
 }
 .todo-container header {
   text-align: center;
   padding: 0 1rem 1rem;
   border-bottom: 1px solid #ccc;
+}
+.todo-container header h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .todo-container #todo-form,
 .todo-container #edit-form {
@@ -76,7 +78,6 @@ select {
 }
 .todo-container .form-control input {
   margin-right: 0.3rem;
-<<<<<<< HEAD
 }
 .todo-container #toolbar {
   padding: 1rem;
@@ -137,6 +138,4 @@ select {
   color: #fff;
   text-decoration: line-through;
   font-style: italic;
-=======
->>>>>>> 5d84f5510bf472738979388571d7d7d611fc5ba5
 }
