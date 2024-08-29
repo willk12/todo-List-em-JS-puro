@@ -9,6 +9,37 @@ const cancelEditBtn = document.querySelector('#cancel-edit-btn');
 
 //funções
 
+const saveTodo = (text) => {
+    const todo = document.createElement('div')
+    todo.classList.add("todo")
+
+    const todotitle = document.createElement('h3')
+    todotitle.innerText = text
+    todo.appendChild(todotitle);
+
+
+
+
+    const doneBtn = document.createElement('button')
+    doneBtn.classList.add('finish-todo')
+    doneBtn.innerHTML ='<i class="fa-solid fa-check"></i>'
+    todo.appendChild(doneBtn);
+
+    const editBtn = document.createElement('button')
+    editBtn.classList.add('edit-todo')
+    editBtn.innerHTML ='<i class=fa-solid fa-pen"></i>'
+    todo.appendChild(editBtn);
+
+    const removeBtn = document.createElement('button')
+    removeBtn.classList.add('remove-todo')
+    removeBtn.innerHTML ='<i class="fa-solid fa-xmark"></i>'
+    todo.appendChild(removeBtn);
+
+    
+
+    console.log(todo)
+}
+
 //Eventos
 
 todoForm.addEventListener('submit', (e) =>{
@@ -17,7 +48,5 @@ todoForm.addEventListener('submit', (e) =>{
 
     const inputValue = todoInput.value;
 
-    if(inputValue){
-        console.log(inputValue)
-    }
+   saveTodo(inputValue)
 })
