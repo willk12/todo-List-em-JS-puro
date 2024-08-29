@@ -27,7 +27,7 @@ const saveTodo = (text) => {
 
     const editBtn = document.createElement('button')
     editBtn.classList.add('edit-todo')
-    editBtn.innerHTML ='<i class=fa-solid fa-pen"></i>'
+    editBtn.innerHTML ='<i class="fa-solid fa-pen"></i>'
     todo.appendChild(editBtn);
 
     const removeBtn = document.createElement('button')
@@ -37,7 +37,7 @@ const saveTodo = (text) => {
 
     
 
-    console.log(todo)
+    todoList.appendChild(todo);
 }
 
 //Eventos
@@ -48,5 +48,7 @@ todoForm.addEventListener('submit', (e) =>{
 
     const inputValue = todoInput.value;
 
-   saveTodo(inputValue)
+   if(inputValue){
+    saveTodo(inputValue)
+   }
 })
