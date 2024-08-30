@@ -9,3 +9,5 @@ Este projeto é uma aplicação simples de lista de tarefas desenvolvida com HTM
 - Excluir tarefas
   
 Atualmente, o projeto não possui armazenamento em Local Storage, mas essa funcionalidade será implementada em futuras versões.
+
+Netlify : https://peppy-custard-ea8749.netlify.app/
