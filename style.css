@@ -43,6 +43,10 @@ select {
   padding: 5px;
 }
 
+.hide {
+  display: none;
+}
+
 .todo-container {
   margin: 3rem auto;
   background-color: #fdfdfd;
